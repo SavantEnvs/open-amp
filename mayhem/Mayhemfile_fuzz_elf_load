@@ -1,0 +1,9 @@
+project: savantenvs/open-amp
+target: fuzz_elf_load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_elf_load/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_elf_load
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/open-amp
+target: fuzz_rsc_table
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rsc_table/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rsc_table
+    libfuzzer: true
+    timeout: 10

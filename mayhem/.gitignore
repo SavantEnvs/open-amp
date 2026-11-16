@@ -1,0 +1,5 @@
+build-fuzz/
+build-oracle/
+ctrf-report.json
+# upstream ignores *.bin; the seeds must be committed
+!**/testsuite/*.bin
